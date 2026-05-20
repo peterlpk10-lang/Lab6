@@ -1,6 +1,6 @@
 from conta import Conta
-def main():
-    minha_conta = Conta("Bob Esponja", 67)
+
+minha_conta = Conta("Bob Esponja")
 while True:
     print ("☠=== MENU ===☠")
     print ("[1] - DEPOSITAR")
@@ -22,12 +22,11 @@ while True:
         print ("SAQUE FEITO ZÉ")
 
     elif opcao == "3":
-        rendimento =
-        minha_conta.calcularRendimento()
+        rendimento = minha_conta.calcular_rendimento()
         print (f"RENDIMENTO: R${rendimento}")
 
     elif opcao == "4":
-        print (f"SALDO ATUAL: R${minha_conta.saldo}")
+        minha_conta.mostrar_saldo()
 
     elif opcao == "5":
         print ("ENCERRANDO...")
@@ -35,4 +34,4 @@ while True:
 
     else:
         print ("NÃO TEM ESSA NÃO JÃO ☠")
-main ()
+
